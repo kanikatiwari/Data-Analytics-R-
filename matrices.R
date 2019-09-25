@@ -28,3 +28,4 @@ dim(m) = c(5,2)
 #cbind- for collumn
 #rbind- for rows 
   
+mymatrix= matrix(1:6,nrow=3,byrow=TRUE)
