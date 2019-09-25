@@ -58,4 +58,3 @@ xx <- c(1.7, "a")
 xx
 xx <- c(TRUE, 2)
 xx <- c("a", TRUE)
-        

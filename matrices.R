@@ -14,6 +14,7 @@ m
 #Matrix filled collumn wise
 m <- matrix(1:6, nrow = 2, ncol = 3)
 m
+typeof(m)
 
 #Matrix filled row wise
 mymatrix= matrix(1:6,nrow=3,byrow=TRUE)
