@@ -11,6 +11,8 @@
 # typeof() - what is the object’s data type (low-level)?
 # length() - how long is it? What about two dimensional objects?
 # attributes() - does it have any metadata?
+# str() Compactly display the internal structure of an R object.
+# names() Names of elements within an object
 
 #Data Structures
 

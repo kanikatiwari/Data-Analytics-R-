@@ -58,3 +58,11 @@ xx <- c(1.7, "a")
 xx
 xx <- c(TRUE, 2)
 xx <- c("a", TRUE)
+
+#Slicing a Vector:
+#We can select one or many elements from a vector by using the square brackets [ ]. 
+
+series[4] 
+
+k= seq(1,10,1.5)
+k[5] #Showing the 5th element on vector

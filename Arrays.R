@@ -17,4 +17,3 @@ matrix.names <- c("Matrix1","Matrix2")
 
 result <- array(c(vector1,vector2),dim = c(3,3,2),dimnames = list(row.names,column.names, matrix.names))
 result
-?array
