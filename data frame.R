@@ -1,6 +1,6 @@
 #data frame
 
-#Matrices that can contain different data sets- numeric, character, logical or integer
+#Data frame can contains different data sets- numeric, character, logical or integer
 
 #Dataframe1
 patient_ID= c(1,2,3,4)
@@ -23,9 +23,24 @@ patient_data
 
 (marks2 = ceiling(rnorm(30,40,5)))
 (course = sample(c('BBA','MBA'), size=30, replace=T, prob=c(.5,.5)))
-
-df= data.frame(rollno, sname, gender, course, marks1, marks2)
+table(course)
+df= data.frame(rollno, sname, gender, course, marks1, marks2, stringsAsFactors = F)
 df
 str(df)
 
-#by defualt
+#by defualt R creates all the vectors with charater data as Factor.
+
+#Now we will make Faactor by ourself like Gender and Course
+
+df$gender = factor(df$gender)
+df$course = factor(df$course, levels= c('BBA','MBA'), ordered = TRUE)
+str(df)
+df
+
+#Slicing the Data Frame
+
+df[7,]
+#using dplyr function
+df %>% slice(3)
+df %>% slice(3:6)
+
