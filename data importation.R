@@ -43,3 +43,8 @@ efile1
 #keepFormulas=FALSE, encoding="unknown", password=NULL, ...)
 
 #importing file from web
+url="https://docs.google.com/spreadsheets/d/1wre_VU1geys_cDPljBHm26BHof3hlttkJSapQXUIzEg/edit#gid=0"
+install.packages('gsheet')
+library(gsheet)
+g_data=as.data.frame(gsheet2tbl(url))
+g_data
