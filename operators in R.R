@@ -68,12 +68,9 @@ a != b
 # | Element wise logical OR
 # || Logical OR
 
-f = c(TRUE, FALSE, 0, 6)
-g = c(FALSE, TRUE, FALSE, TRUE)
+f = c(45,31,51,60,78,98)
+g = c(34,56,12,67,22,89)
 
-!f
-!g
-f & g
-f | g
-f || g
-
+d= (f>40 & f<60)
+d
+(f<=40 | f<70)
