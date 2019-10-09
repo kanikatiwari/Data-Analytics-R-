@@ -24,11 +24,12 @@ View(radio)
 
 #df = ("https://s3.amazonaws.com/assets.datacamp.com/blog_assets/scores_timed.csv", header = TRUE, quote="\"", stringsAsFactors= TRUE, strip.white = TRUE)
 
-
 #importing a text file
-#y=read.table("data_t.txt")
-#y
-#y=read.csv("data.csv", header = T) #if marked true, first line is 
+y=read.table('data_t.txt')
+y
+y=read.table("data_t.txt", header = T) #if marked true, first line is 
+y
+
 #importing an excel file
 install.packages('xlsx')
 library(xlsx)
@@ -48,3 +49,13 @@ install.packages('gsheet')
 library(gsheet)
 g_data=as.data.frame(gsheet2tbl(url))
 g_data
+
+#exporting the file to other formats
+data()
+?write.csv
+write.csv(k, file= "g_data")
+
+k
+write.csv(x=mtcars, file='data/mtcars1.csv')
+write.csv(x=mtcars, file='data/mtcars2.csv', row.names = F)
+#save it data folder all csv files
