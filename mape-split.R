@@ -25,14 +25,16 @@ View(train)
 View(test)
 
 #Way 2
-#random sample index
-splitindex= sample()
-train_index= sample(1:nrow(beaver1), 0.8*nrow(beaver1))
-test_index= setdiff(1:nrow(beaver1), train_index)
-View(train_index)
-
-
 #simple sample
+#using iris data set to split it
+iris
+dim(iris)
+#creating a sample 
+a= sample(150,100)
+iris_train = iris[a,]
+iris_test = iris[-a,]
+dim(iris_train)
+dim(iris_test)
 
 
 #Way 3
