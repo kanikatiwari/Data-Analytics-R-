@@ -37,6 +37,15 @@ dim(iris_train)
 dim(iris_test)
 
 
+#sample split
+index = sample(1:nrow(cars), size=0.8 * nrow(cars))
+index
+length(index)
+length(unique(index))
+traindata = cars[index,]
+traindata
+testdata = cars[-index,]
+
 #Way 3
 #using caret
 library(caret)
