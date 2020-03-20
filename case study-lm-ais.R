@@ -81,7 +81,6 @@ print(mape) # show the result
 #Residuals vs Fitted values
 
 plot(modTrain, pch=16, col="blue", lty=1, lwd=2, which=1) 
-plot(mod1, pch=16, col="blue", lty=1, lwd=2, which=1) 
 
 #Residual data of the simple linear regression model is the difference between the observed data of the dependent variable and the fitted values.
 #The plot is useful for checking the assumption of linearity and homoscedasticity. To assess the assumption of linearity, residuals should be not too far from 0 (ideally, standardized values should be in the range of -2 and +2). To assess he assumption of homoscedasticity, residuals should be randomly and equally distributed around the horizontal red line (which is just a scatterplot smoother, showing the average value of the residuals at each value of fitted value) representing a residual error of zero.In the current case, the red trend line is almost at zero except towards the right side, due to outliers presence. Some values, in particular observations “166”, “169” and "172" are outside the range between -2 and +2.
@@ -93,7 +92,7 @@ plot(modTrain, pch=16, col="blue", lty=1, lwd=2, which=2)
 #In the current case, points form a line in the middle of the graph, but tend to deviate from the diagonal line in both the upper and lower extremities. Plot behaviour like this, means that the tails are lighter (have smaller values) than what would be expected under the standard modeling assumptions (of the Normal distribution). Again the observations that can be noticed in the tails are "166”, “169” and "172".
 
 #scale -location
-plot(mod1, pch=16, col="blue", lty=1, lwd=2, which=3)
+plot(modTrain, pch=16, col="blue", lty=1, lwd=2, which=3)
 #The scale-location plot shows the square root of the standardized residuals (sort of a square root of relative error) as a function of the fitted values. It is useful to see how the residuals are spread and check the assumption of homoscedasticity (that it if the residuals have an equal variance or not).
 #In the current case, the red trend line is almost horizontal except towards the right side. Again, observations “166”, “169” and "172" are outside the level of +1.5
 
